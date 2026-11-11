@@ -81,7 +81,7 @@ gnu:
 ios:
 	$(call make_platform,misc/ios/Makefile)
 android:
-	$(call make_platform,misc/android/Makefile)
+	$(call make_platform,android/Makefile)
 
 # Embedded systems
 wince:
