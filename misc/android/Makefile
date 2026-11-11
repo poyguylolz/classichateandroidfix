@@ -101,7 +101,7 @@ include misc/makefiles/common_build.mk
 # Java targets
 #---------------------------------------------------------------------------------
 OBJ_DIR		:= $(APK_DIR)/obj
-JAVA_DIR	:= misc/android/app/src/main/java/com/classicube
+JAVA_DIR	:= android/app/src/main/java/com/classicube
 CLASSES_DEX	:= $(APK_DIR)/classes.dex
 
 # note that java files can generate multiple class files (due to inner classes)
@@ -120,8 +120,8 @@ $(ARM_v5_DIR) $(ARM_32_DIR) $(ARM_64_DIR) $(X86_32_DIR) $(X86_64_DIR) $(OBJ_DIR)
 #---------------------------------------------------------------------------------
 # executable generation
 #---------------------------------------------------------------------------------
-MANIFEST := misc/android/app/src/main/AndroidManifest.xml
-RES_DIR	 := misc/android/app/src/main/res
+MANIFEST := android/app/src/main/AndroidManifest.xml
+RES_DIR	 := android/app/src/main/res
 
 # create initial .apk with packaged version of resources, then add all required files
 # TODO just use package ??
